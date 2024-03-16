@@ -1,4 +1,4 @@
-#hostname
+# hostname
 ==============================
 hostname
 # or #
@@ -11,7 +11,7 @@ sudo reboot
 
 
 
-#ansible-installation:
+# ansible-installation:
 =================================================
 amazon-linux-extras list | grep ansible
 
@@ -24,7 +24,7 @@ sudo nano /etc/ansible/hosts
 
 
 -----------------------------------------------------------------------------------
-Install Ansible:
+# Install Ansible:
 -------------------
 
 sudo yum install epel-release
@@ -33,7 +33,7 @@ sudo yum install python-pip
 
 yum install ansible 
 
-Create SSH Connection:
+# Create SSH Connection:
 ------------------------
 
 ssh-keygen
@@ -46,7 +46,7 @@ ssh-copy-id user@ip
 
 eg: ssh-copy-id root@192.168.239.111
 
-Ansible Modules:
+# Ansible Modules:
 -------------------------
 
 ## Ping Module:
