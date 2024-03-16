@@ -54,7 +54,9 @@ ansible testservers -m ping
 
 ## File module: Creating and deleting directory
 
-```ansible testservers -m file -a "dest=/root/file state=directory"```
+```
+ansible testservers -m file -a "dest=/root/file state=directory"
+```
 
 ansible testservers -m file -a "dest=/root/file mode=755 owner=root group=root state=directory"
 
