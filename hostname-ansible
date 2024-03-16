@@ -1,0 +1,10 @@
+hostname
+==============================
+hostname
+# or #
+hostnamectl
+# another option #
+cat /etc/hostname
+
+sudo hostnamectl set-hostname stats1.opensourceflare.com
+sudo reboot
