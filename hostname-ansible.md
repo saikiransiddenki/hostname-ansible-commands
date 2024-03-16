@@ -49,35 +49,35 @@ eg: ssh-copy-id root@192.168.239.111
 Ansible Modules:
 -------------------------
 
-##Ping Module:
+## Ping Module:
 ansible testservers -m ping
 
-##File module: Creating and deleting directory
+## File module: Creating and deleting directory
 
 ansible testservers -m file -a "dest=/root/file state=directory"
 ansible testservers -m file -a "dest=/root/file mode=755 owner=root group=root state=directory"
 ansible testservers -m file -a "dest=/root/file state=absent"
 
-##Copy Module:
+## Copy Module:
 
 ansible testservers -m copy -a "src=/root/file/text.txt dest=/root/"
 
-##Shell Module:
+## Shell Module:
 
 ansible testservers -m shell -a "mkdir test"
 
-##Yum Module:
+## Yum Module:
 
 ansible testservers -m yum -a "name=wget state=present"
 ansible testservers -m yum -a "name=httpd state=present"
 
 
-##Service Module:
+## Service Module:
 
 ansible testservers -m service -a "name=httpd state=restarted"
 ansible testservers -m service -a "name=httpd state=started"
 ansible testservers -m service -a "name=httpd state=stopped"
 
-##restarting the servers:
+## restarting the servers:
 
 ansible testservers -a "/sbin/reboot"
