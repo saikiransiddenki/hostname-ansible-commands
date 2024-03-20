@@ -93,6 +93,7 @@ ansible testservers -a "/sbin/reboot"
 
 ## Ansible Master and node connection establishing commands
 =======================================================================================
+ 
     1.clear
     
     2  sudo hostnamectl set-name master-ansible
