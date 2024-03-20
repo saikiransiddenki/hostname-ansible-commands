@@ -100,22 +100,34 @@ ansible testservers -a "/sbin/reboot"
     3  sudo hostnamectl set-hostname master-ansible
     
     4  sudo sysyemstl reboot
+    
     5  sudo systemctl reboot
-    6  Rclear
+    
     7  clear
+    
     8  sudo apt update
+    
     9  sudo apt install ansible
+    
    10  ansible --version
+   
    11  ssh-keygen
+   
    12  sudo /etc/ansible/
+   
    13  sudo cd /etc/ansible/
+   
    14  cd /etc/ansible/
+   
    15  ls
+   
    16  sudo vi hosts
+   
    17  cd
+   
    18  sudo vi /etc/ssh/sshd_config
+   
    19  sudo systemctl sshd restart
+   
    20  sudo systemctl restart sshd
-   21  history
-   22  clear
-   23  history
+
